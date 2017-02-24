@@ -7,12 +7,13 @@
 <html>
 <head>
 <fmt:setLocale value="${pageContext.request.locale.language}"/>
-<fmt:setBundle basename="com.internousdev.struts2.property.login_ja" var="lang" />
+<fmt:setBundle basename="com.internousdev.struts2.property.login_jp" var="lang" />
 <meta charset="utf-8">
 <title>ログイン画面</title>
 </head>
 <body>
-<h1>ログイン画面</h1>
+<h1>ログイン</h1>
+<h1><s:text name = "lang.struts2.login" /></h1>
 <s:form action="LoginAction">
 <s:textfield name="name"/>
 <s:password name="password"/>
